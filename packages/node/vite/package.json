@@ -1,0 +1,30 @@
+{
+  "name": "@celeris/vite",
+  "version": "0.0.1",
+  "description": "vite for Celeris",
+  "author": "Kirk Lin (https://github.com/kirklin)",
+  "license": "MIT",
+  "homepage": "https://github.com/kirklin/celeris-admin",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist",
+    "postinstall": "pnpm unbuild --stub"
+  },
+  "dependencies": {
+    "@celeris/utils": "workspace:*",
+    "vite": "^4.3.9"
+  },
+  "devDependencies": {
+    "@celeris/styles": "workspace:*",
+    "@celeris/types": "workspace:*",
+    "rollup-plugin-visualizer": "^5.9.0",
+    "typescript": "^5.0.4",
+    "unplugin-auto-import": "^0.16.2",
+    "unplugin-config": "^0.0.3",
+    "unplugin-vue-components": "^0.24.1",
+    "vite-plugin-inspect": "^0.7.28",
+    "vite-plugin-pwa": "^0.15.1",
+    "vite-plugin-vue-devtools": "^0.0.22"
+  }
+}
